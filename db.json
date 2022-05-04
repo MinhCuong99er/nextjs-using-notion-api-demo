@@ -42,7 +42,11 @@
       "deadline": 21050000,
       "description": "",
       "responsibleBy": "",
-      "id": "63"
+      "id": "63",
+      "note": "",
+      "approved": true,
+      "executionID": "",
+      "authorizationStatus": ""
     },
     {
       "missionName": "Kiểm tra thông tin chào phí",
@@ -54,7 +58,11 @@
       "deadline": 21050000,
       "description": "",
       "responsibleBy": "",
-      "id": "89"
+      "id": "89",
+      "note": "",
+      "approved": false,
+      "executionID": "",
+      "authorizationStatus": ""
     },
     {
       "missionName": "Kiểm tra thông tin chào phí",
@@ -66,7 +74,60 @@
       "deadline": 21050000,
       "description": "",
       "responsibleBy": "",
-      "id": "63"
+      "id": "45",
+      "note": "",
+      "approved": false,
+      "executionID": "",
+      "authorizationStatus": ""
+    }
+  ],
+  "customer": {
+    "id": "KH01",
+    "group": "Tổ chức/Doanh nghiệp",
+    "name": "Công ty TNHH THương mại & Sản xuất ABC",
+    "address": "166 Hai Bà Trưng, Hoàn Kiếm, Hà Nội",
+    "taxCode": "01354466",
+    "identityCard": "",
+    "birthday": "",
+    "phone": "0243887755999",
+    "email": "abc@tm.com.vn"
+  },
+  "service": {
+    "typeOf": "Hợp đồng gốc",
+    "originalContractNumber": "",
+    "miningType": "Đại lý cấp 1",
+    "miningId": "",
+    "managers": "Nguyễn An Hưng",
+    "originalCurrencyFee": "VNĐ",
+    "product": "Cháy nổ tự nguyện"
+  },
+  "insuredObject": {
+    "name": "",
+    "latitude": "",
+    "longitude": "",
+    "address": "166 Hai Bà Trưng, Hoàn Kiếm, Hà Nội",
+    "province": "Hà Nội",
+    "district": "",
+    "ward": "",
+    "risk": "",
+    "originalCurrencyFee": "VNĐ",
+    "fieldOfActivity": "",
+    "totalMoney": ""
+  },
+  "insuranceItem": [
+    {
+      "name": "Xà bông",
+      "quantity": 100,
+      "value": 10000000,
+      "totalValue": 1000000000,
+      "participationValue": 1000000000
+    },
+    {
+      "name": "Nước rửa chén",
+      "quantity": 20,
+      "value": 15000,
+      "totalValue": 300000,
+      "participationValue": 300000
     }
   ]
 }
