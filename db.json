@@ -129,5 +129,32 @@
       "totalValue": 300000,
       "participationValue": 300000
     }
-  ]
+  ],
+  "document-list-group": [
+    "Bản đánh giá rủi ro",
+    "Hình ảnh đánh giá rủi ro",
+    "Giấy yêu cầu bảo hiểm",
+    "Tờ trình cháo phí hợp đồng",
+    "Các tài liệu khác"
+  ],
+  "document-list": [
+    {
+      "name": "123.jpg",
+      "download": "123.jpg"
+    },
+    {
+      "name": "info.png",
+      "download": "info.png"
+    }
+  ],
+  "materialInsuranceFee": {
+    "total_amount_insured": 110000000000,
+    "standardFeeRate": 0.15,
+    "standardFee": 16500000000,
+    "proposedFeeRate": 0.13,
+    "proposedFee": 14300000000,
+    "deductionRate": 5,
+    "minimumDeductibleAmount": 100000000,
+    "deductionNotes": "vụ tông thất"
+  }
 }
