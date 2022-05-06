@@ -2,7 +2,7 @@
   "insuranceContract": [
     {
       "key": 1,
-      "id": 4703,
+      "id": "4703",
       "contractId": "SO220222500001",
       "contractDate": "25/2/2022",
       "customerName": "Công ty TNHH THương mại & Sản xuất ABC",
@@ -12,8 +12,8 @@
       "contractStatus": ""
     },
     {
-      "key": 2,
-      "id": 4702,
+      "key": "2",
+      "id": "4702",
       "contractId": "SO220222500000",
       "contractDate": "25/2/2022",
       "customerName": "Nguyễn Văn Test",
@@ -24,7 +24,7 @@
     },
     {
       "key": 3,
-      "id": 4501,
+      "id": "4501",
       "contractId": "SO220222500001",
       "contractDate": "25/2/2022",
       "customerName": "Nguyễn Văn A",
