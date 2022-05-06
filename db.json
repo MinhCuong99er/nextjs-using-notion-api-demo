@@ -6,9 +6,6 @@
       "contractDate": "25/2/2022",
       "customerName": "Công ty TNHH THương mại & Sản xuất ABC",
       "product": "Cháy nổ tự nguyện",
-      "total_amount_insured": 114000000000,
-      "total_amount_fee": 163450000,
-      "contractStatus": ""
     },
     {
       "id": 4702,
@@ -16,9 +13,6 @@
       "contractDate": "25/2/2022",
       "customerName": "Nguyễn Văn Test",
       "product": "Cháy nổ tự nguyện & bắt buộc",
-      "total_amount_insured": 23000000000,
-      "total_amount_fee": 348400000,
-      "contractStatus": ""
     },
     {
       "id": 4501,
@@ -26,9 +20,6 @@
       "contractDate": "25/2/2022",
       "customerName": "Nguyễn Văn A",
       "product": "Cháy nổ tự nguyện & bắt buộc",
-      "total_amount_insured": 15000000000,
-      "total_amount_fee": 21050000,
-      "contractStatus": ""
     }
   ],
   "mission": [
