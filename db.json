@@ -1,6 +1,7 @@
 {
   "insuranceContract": [
     {
+      "key": 1,
       "id": 4703,
       "contractId": "SO220222500001",
       "contractDate": "25/2/2022",
@@ -11,6 +12,7 @@
       "contractStatus": ""
     },
     {
+      "key": 2,
       "id": 4702,
       "contractId": "SO220222500000",
       "contractDate": "25/2/2022",
@@ -21,6 +23,7 @@
       "contractStatus": ""
     },
     {
+      "key": 3,
       "id": 4501,
       "contractId": "SO220222500001",
       "contractDate": "25/2/2022",
