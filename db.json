@@ -33,5 +33,39 @@
       "total_amount_fee": 21050000,
       "contractStatus": ""
     }
+  ],
+  "mission": [
+    {
+      "missionName": "Kiểm tra thông tin chào phí",
+      "contractId": "SO220222500000",
+      "contractDate": "25/2/2022",
+      "customerName": "Nguyễn Văn A",
+      "receiver": "",
+      "created_at": "25/2/2022",
+      "deadline": 21050000,
+      "description": "",
+      "responsibleBy": "",
+      "id": "63",
+      "note": "",
+      "approved": true,
+      "executionID": "",
+      "authorizationStatus": ""
+    },
+    {
+      "missionName": "Kiểm tra thông tin chào phí",
+      "contractId": "SO220222500001",
+      "contractDate": "25/2/2022",
+      "customerName": "Công ty TNHH THương mại & Sản xuất ABC",
+      "receiver": "",
+      "created_at": "25/2/2022",
+      "deadline": 21050000,
+      "description": "",
+      "responsibleBy": "",
+      "id": "89",
+      "note": "",
+      "approved": false,
+      "executionID": "",
+      "authorizationStatus": ""
+    }
   ]
 }
