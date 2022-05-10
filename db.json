@@ -1,7 +1,7 @@
 {
   "insuranceContract": [
     {
-      "key": 1,
+      "key": "1",
       "id": "4703",
       "contractId": "SO220222500001",
       "contractDate": "25/2/2022",
@@ -23,7 +23,7 @@
       "contractStatus": ""
     },
     {
-      "key": 3,
+      "key": "3",
       "id": "4501",
       "contractId": "SO220222500001",
       "contractDate": "25/2/2022",
@@ -36,6 +36,7 @@
   ],
   "mission": [
     {
+      "key": "1",
       "missionName": "Kiểm tra thông tin chào phí",
       "contractId": "SO220222500000",
       "contractDate": "25/2/2022",
@@ -52,6 +53,7 @@
       "authorizationStatus": ""
     },
     {
+      "key": "2",
       "missionName": "Kiểm tra thông tin chào phí",
       "contractId": "SO220222500001",
       "contractDate": "25/2/2022",
