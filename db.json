@@ -69,5 +69,16 @@
       "executionID": "",
       "authorizationStatus": ""
     }
-  ]
+  ],
+  "customerInfo" : {
+    "id": "KH01",
+    "group": "Tổ chức/Doanh nghiệp",
+    "name": "Công ty TNHH THương mại & Sản xuất ABC",
+    "address": "166 Hai Bà Trưng, Hoàn Kiếm, Hà Nội",
+    "taxCode": "01354466",
+    "identityCard": "",
+    "birthday": "",
+    "phone": 0243887755999,
+    "email": "abc@tm.com.vn"
+  }
 }
