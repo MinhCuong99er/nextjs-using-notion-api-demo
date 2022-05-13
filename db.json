@@ -81,5 +81,14 @@
     "phone": "0243887755999",
     "email": "abc@tm.com.vn",
     "fax": ""
+  },
+  "service": {
+    "typeOf": "Hợp đồng gốc",
+    "originalContractNumber": null,
+    "miningType": "Đại lý cấp 1",
+    "miningId": null,
+    "managers": "Nguyễn An Hưng",
+    "originalCurrencyFee": "VNĐ",
+    "product": "Cháy nổ tự nguyện"
   }
 }
