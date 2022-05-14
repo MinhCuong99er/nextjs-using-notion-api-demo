@@ -90,5 +90,12 @@
     "managers": "Nguyễn An Hưng",
     "originalCurrencyFee": "VNĐ",
     "product": "Cháy nổ tự nguyện"
-  }
+  },
+  "document-list-group": [
+    "Bản đánh giá rủi ro",
+    "Hình ảnh đánh giá rủi ro",
+    "Giấy yêu cầu bảo hiểm",
+    "Tờ trình cháo phí hợp đồng",
+    "Các tài liệu khác"
+  ]
 }
