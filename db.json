@@ -97,15 +97,5 @@
     "Giấy yêu cầu bảo hiểm",
     "Tờ trình cháo phí hợp đồng",
     "Các tài liệu khác"
-  ],
-  "document-list": [
-    {
-      "name": "123.jpg",
-      "download": "123.jpg"
-    },
-    {
-      "name": "info.png",
-      "download": "info.png"
-    }
   ]
 }
