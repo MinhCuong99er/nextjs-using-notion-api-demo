@@ -90,18 +90,5 @@
     "managers": "Nguyễn An Hưng",
     "originalCurrencyFee": "VNĐ",
     "product": "Cháy nổ tự nguyện"
-  },
-  "insuredObject": {
-    "name": "",
-    "latitude": "",
-    "longitude": "",
-    "address": "166 Hai Bà Trưng, Hoàn Kiếm, Hà Nội",
-    "province": "Hà Nội",
-    "district": "",
-    "ward": "",
-    "risk": "",
-    "originalCurrencyFee": "VNĐ",
-    "fieldOfActivity": "",
-    "totalMoney": ""
   }
 }
