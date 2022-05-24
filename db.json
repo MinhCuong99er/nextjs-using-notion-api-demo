@@ -1,101 +1,101 @@
 {
-  "insuranceContract": [
-    {
-      "key": 1,
-      "id": 4703,
-      "contractId": "SO220222500001",
-      "contractDate": "25/2/2022",
-      "customerName": "Công ty TNHH THương mại & Sản xuất ABC",
-      "product": "Cháy nổ tự nguyện",
-      "total_amount_insured": 114000000000,
-      "total_amount_fee": 163450000,
-      "contractStatus": ""
-    },
-    {
-      "key": 2,
-      "id": 4702,
-      "contractId": "SO220222500000",
-      "contractDate": "25/2/2022",
-      "customerName": "Nguyễn Văn Test",
-      "product": "Cháy nổ tự nguyện & bắt buộc",
-      "total_amount_insured": 23000000000,
-      "total_amount_fee": 348400000,
-      "contractStatus": ""
-    },
-    {
-      "key": 3,
-      "id": 4501,
-      "contractId": "SO220222500001",
-      "contractDate": "25/2/2022",
-      "customerName": "Nguyễn Văn A",
-      "product": "Cháy nổ tự nguyện & bắt buộc",
-      "total_amount_insured": 15000000000,
-      "total_amount_fee": 21050000,
-      "contractStatus": ""
-    }
-  ],
-  "mission": [
-    {
-      "key": 1,
-      "missionName": "Kiểm tra thông tin chào phí",
-      "contractId": "SO220222500000",
-      "followDate": "",
-      "customerName": "Nguyễn Văn A",
-      "receiver": "",
-      "created_at": 1645747200,
-      "deadline": "",
-      "description": "",
-      "responsibleBy": "",
-      "missionId": 63,
-      "note": "",
-      "approved": true,
-      "executionID": "",
-      "authorizationStatus": ""
-    },
-    {
-      "key": 2,
-      "missionName": "Kiểm tra thông tin chào phí",
-      "contractId": "SO220222500001",
-      "followDate": "",
-      "customerName": "Công ty TNHH THương mại & Sản xuất ABC",
-      "receiver": "",
-      "created_at": "",
-      "deadline": "",
-      "description": "",
-      "responsibleBy": "",
-      "missionId": 89,
-      "note": "",
-      "approved": false,
-      "executionID": "",
-      "authorizationStatus": ""
-    }
-  ],
-  "customerInfo" : {
-    "id": "KH01",
-    "group": "Tổ chức/Doanh nghiệp",
-    "name": "Công ty TNHH THương mại & Sản xuất ABC",
-    "address": "166 Hai Bà Trưng, Hoàn Kiếm, Hà Nội",
-    "taxCode": "01354466",
-    "identityCard": "",
-    "birthday": "",
-    "phone": "0243887755999",
-    "email": "abc@tm.com.vn",
-    "fax": ""
-  },
-  "service": {
-    "typeOf": "Hợp đồng gốc",
-    "originalContractNumber": null,
-    "miningType": "Đại lý cấp 1",
-    "miningId": null,
-    "managers": "Nguyễn An Hưng",
-    "originalCurrencyFee": "VNĐ",
-    "product": "Cháy nổ tự nguyện"
-  },
-  "document-list-group": [
-    "Bản đánh giá rủi ro",
-    "Hình ảnh đánh giá rủi ro",
-    "Giấy yêu cầu bảo hiểm",
-    "Tờ trình cháo phí hợp đồng",
-    "Các tài liệu khác"
-  ]
+	"insuranceContract": [
+		{
+			"key": 1,
+			"id": 4703,
+			"contractId": "SO220222500001",
+			"contractDate": "25/2/2022",
+			"customerName": "Công ty TNHH THương mại & Sản xuất ABC",
+			"product": "Cháy nổ tự nguyện",
+			"total_amount_insured": 114000000000,
+			"total_amount_fee": 163450000,
+			"contractStatus": ""
+		},
+		{
+			"key": 2,
+			"id": 4702,
+			"contractId": "SO220222500000",
+			"contractDate": "25/2/2022",
+			"customerName": "Nguyễn Văn Test",
+			"product": "Cháy nổ tự nguyện & bắt buộc",
+			"total_amount_insured": 23000000000,
+			"total_amount_fee": 348400000,
+			"contractStatus": ""
+		},
+		{
+			"key": 3,
+			"id": 4501,
+			"contractId": "SO220222500001",
+			"contractDate": "25/2/2022",
+			"customerName": "Nguyễn Văn A",
+			"product": "Cháy nổ tự nguyện & bắt buộc",
+			"total_amount_insured": 15000000000,
+			"total_amount_fee": 21050000,
+			"contractStatus": ""
+		}
+	],
+	"mission": [
+		{
+			"key": 1,
+			"missionName": "Kiểm tra thông tin chào phí",
+			"contractId": "SO220222500000",
+			"followDate": "",
+			"customerName": "Nguyễn Văn A",
+			"receiver": "",
+			"created_at": 1645747200,
+			"deadline": "",
+			"description": "",
+			"responsibleBy": "",
+			"missionId": 63,
+			"note": "",
+			"approved": true,
+			"executionID": "",
+			"authorizationStatus": ""
+		},
+		{
+			"key": 2,
+			"missionName": "Kiểm tra thông tin chào phí",
+			"contractId": "SO220222500001",
+			"followDate": "",
+			"customerName": "Công ty TNHH THương mại & Sản xuất ABC",
+			"receiver": "",
+			"created_at": "",
+			"deadline": "",
+			"description": "",
+			"responsibleBy": "",
+			"missionId": 89,
+			"note": "",
+			"approved": false,
+			"executionID": "",
+			"authorizationStatus": ""
+		}
+	],
+	"customerInfo": {
+		"id": "KH01",
+		"group": "Tổ chức/Doanh nghiệp",
+		"name": "Công ty TNHH THương mại & Sản xuất ABC",
+		"address": "166 Hai Bà Trưng, Hoàn Kiếm, Hà Nội",
+		"taxCode": "01354466",
+		"identityCard": "",
+		"birthday": "",
+		"phone": "0243887755999",
+		"email": "abc@tm.com.vn",
+		"fax": ""
+	},
+	"service": {
+		"typeOf": "Hợp đồng gốc",
+		"originalContractNumber": null,
+		"miningType": "Đại lý cấp 1",
+		"miningId": null,
+		"managers": "Nguyễn An Hưng",
+		"originalCurrencyFee": "VNĐ",
+		"product": "Cháy nổ tự nguyện"
+	},
+	"document-list-group": [
+		"Bản đánh giá rủi ro",
+		"Hình ảnh đánh giá rủi ro",
+		"Giấy yêu cầu bảo hiểm",
+		"Tờ trình cháo phí hợp đồng",
+		"Các tài liệu khác"
+	]
 }
