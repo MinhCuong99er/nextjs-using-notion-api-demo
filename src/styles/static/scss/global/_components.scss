@@ -1,0 +1,212 @@
+/*---------- example css ----------*/
+// .rs-header {
+//   margin: 10px;
+// }
+.lds-spinner {
+	color: $color-secondary;
+	display: inline-block;
+	position: relative;
+	width: 80px;
+	height: 80px;
+}
+.lds-spinner div {
+	transform-origin: 40px 40px;
+	animation: lds-spinner 1.2s linear infinite;
+}
+.lds-spinner div:after {
+	content: ' ';
+	display: block;
+	position: absolute;
+	top: 3px;
+	left: 37px;
+	width: 6px;
+	height: 18px;
+	border-radius: 20%;
+	background: $color-secondary;
+}
+.lds-spinner div:nth-child(1) {
+	transform: rotate(0deg);
+	animation-delay: -1.1s;
+}
+.lds-spinner div:nth-child(2) {
+	transform: rotate(30deg);
+	animation-delay: -1s;
+}
+.lds-spinner div:nth-child(3) {
+	transform: rotate(60deg);
+	animation-delay: -0.9s;
+}
+.lds-spinner div:nth-child(4) {
+	transform: rotate(90deg);
+	animation-delay: -0.8s;
+}
+.lds-spinner div:nth-child(5) {
+	transform: rotate(120deg);
+	animation-delay: -0.7s;
+}
+.lds-spinner div:nth-child(6) {
+	transform: rotate(150deg);
+	animation-delay: -0.6s;
+}
+.lds-spinner div:nth-child(7) {
+	transform: rotate(180deg);
+	animation-delay: -0.5s;
+}
+.lds-spinner div:nth-child(8) {
+	transform: rotate(210deg);
+	animation-delay: -0.4s;
+}
+.lds-spinner div:nth-child(9) {
+	transform: rotate(240deg);
+	animation-delay: -0.3s;
+}
+.lds-spinner div:nth-child(10) {
+	transform: rotate(270deg);
+	animation-delay: -0.2s;
+}
+.lds-spinner div:nth-child(11) {
+	transform: rotate(300deg);
+	animation-delay: -0.1s;
+}
+.lds-spinner div:nth-child(12) {
+	transform: rotate(330deg);
+	animation-delay: 0s;
+}
+@keyframes lds-spinner {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+.c-loadingcs {
+	text-align: center;
+}
+.c-whitebox {
+	background: $color-white;
+	@include border-radius(10px);
+	padding: 15px;
+	&__top {
+		display: flex;
+		align-items: center;
+		margin-bottom: 15px;
+		h6 {
+			font-weight: 700;
+			margin-right: 15px;
+		}
+	}
+}
+.c-transbox {
+	padding: 15px;
+	&__top {
+		display: flex;
+		align-items: center;
+		margin-bottom: 15px;
+		h6 {
+			font-weight: 700;
+			margin-right: 15px;
+		}
+	}
+}
+.c-btn-call {
+	@include border-radius(11px);
+	padding: 2px 8px 2px 8px !important;
+	display: inline-flex;
+	align-items: center;
+	font-size: 16px;
+	img {
+		width: 20px;
+		display: block;
+		padding-right: 5px;
+	}
+	&.is-call {
+		background: #b12b7c;
+	}
+}
+.rs-sidenav-item-active {
+	background: #9f71c2 !important;
+}
+.rs-sidenav-item {
+	text-decoration: none;
+}
+
+.c-searchbox {
+	position: relative;
+	z-index: 1;
+	.rs-picker-toggle-value,
+	.rs-picker-toggle-placeholder {
+		padding-left: 30px;
+	}
+	.is-icon {
+		position: absolute;
+		z-index: 6;
+		top: 11px;
+		left: 20px;
+	}
+}
+.rs-checkbox-checked .rs-checkbox-wrapper .rs-checkbox-inner:before,
+.rs-checkbox-indeterminate .rs-checkbox-wrapper .rs-checkbox-inner:before {
+	border-color: white !important;
+	background-color: white !important;
+}
+.rs-checkbox-checked .rs-checkbox-wrapper .rs-checkbox-inner:after,
+.rs-checkbox-indeterminate .rs-checkbox-wrapper .rs-checkbox-inner:after {
+	border: solid #96398f !important;
+	border-width: 0 2px 2px 0 !important;
+}
+.rs-checkbox-indeterminate .rs-checkbox-wrapper .rs-checkbox-inner:after {
+	border-width: 0 0 2px !important;
+}
+.is-mb {
+	margin-bottom: 25px;
+}
+.c-quantityinput {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	span {
+		cursor: pointer;
+		display: flex !important;
+		align-items: center;
+		&:nth-child(1),
+		&:nth-child(3) {
+			width: 40px;
+			height: 40px;
+			border: 1px solid #d2d2d2;
+			align-items: center;
+			justify-content: center;
+			font-size: 40px !important;
+		}
+		&:nth-child(2) {
+			border: 1px solid #d2d2d2;
+			height: 40px;
+			min-width: 40px;
+			align-items: center;
+			justify-content: center;
+			font-size: 25px !important;
+			padding: 0 10px;
+		}
+	}
+}
+//example responsive css
+@media (min-width: $screen-sm-min) {
+	//mobile lanscape
+}
+@media (min-width: $screen-md-min) {
+	//ipad portrait
+}
+@media (min-width: $screen-lg-min) {
+	//ipad lanscape & pc 1024x768px
+}
+@media (min-width: $screen-xl-min) {
+	//pc & mac 1280px grow up
+}
+@media (min-width: 1440px) {
+	//pc & mac 1440px grow up
+}
+@media (min-width: 1900px) {
+	//pc & mac 1900px grow up
+}
+//end example responsive css
+/*---------- end example css ----------*/

@@ -1,0 +1,66 @@
+/*---------- example css ----------*/
+.c-tablepaydi {
+	border: 1px solid #c9c9c9;
+	.rs-checkbox-wrapper {
+		background: #fff;
+	}
+	.rs-table-row-header {
+		background: rgba(#96398f, 0.3);
+		.rs-table-cell-content {
+			background: rgba(#96398f, 0.3);
+			color: #000;
+			font-weight: 700;
+			font-size: 16px;
+			display: inline-flex;
+			align-items: center;
+		}
+	}
+	&.is-2 {
+		.rs-table-row-header {
+			border: 1px solid #96398f;
+			background: rgba(#96398f, 0.1);
+			.rs-table-cell-content {
+				background: rgba(#96398f, 0.1);
+			}
+		}
+	}
+	.rs-input,
+	.rs-input-number {
+		border-top: 0;
+		border-left: 0;
+		border-right: 0;
+		border-radius: 0;
+		border-bottom: 1px solid #e5e5ea;
+		background: transparent;
+		height: 27px;
+		text-align: right;
+		&:focus {
+			outline: none;
+			box-shadow: none;
+		}
+	}
+	.rs-input-number {
+		margin-top: -5px;
+	}
+}
+//example responsive css
+@media (min-width: $screen-sm-min) {
+	//mobile lanscape
+}
+@media (min-width: $screen-md-min) {
+	//ipad portrait
+}
+@media (min-width: $screen-lg-min) {
+	//ipad lanscape & pc 1024x768px
+}
+@media (min-width: $screen-xl-min) {
+	//pc & mac 1280px grow up
+}
+@media (min-width: 1440px) {
+	//pc & mac 1440px grow up
+}
+@media (min-width: 1900px) {
+	//pc & mac 1900px grow up
+}
+//end example responsive css
+/*---------- end example css ----------*/
