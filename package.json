@@ -42,7 +42,7 @@
     "mobx-persist": "^0.4.1",
     "mobx-react": "^7.2.0",
     "mobx-react-lite": "^3.2.1",
-    "moment": "^2.29.1",
+    "moment": "^2.29.2",
     "nanogallery2": "^3.0.5",
     "next": "12.1.6",
     "nprogress": "^0.2.0",
