@@ -2,7 +2,10 @@
 
 # dependencies
 /node_modules
-/src
+/src/locales
+/src/styles
+/src/lib
+/src/helpers
 /.pnp
 .pnp.js
 
