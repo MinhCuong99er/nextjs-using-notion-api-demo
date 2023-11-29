@@ -1,0 +1,76 @@
+/*---------- example css ----------*/
+.c-error-page {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	flex-direction: column;
+	.is-image {
+		img {
+			max-width: 100%;
+		}
+	}
+	h1 {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.is-content {
+		width: 100%;
+		.is-btn-group {
+			display: flex;
+			justify-content: space-evenly;
+			align-items: center;
+			.c-btn {
+				text-decoration: none;
+				border-radius: 15px;
+				background: $color-secondary;
+				color: $color-white;
+				padding: 10px 25px;
+				font-weight: bold;
+				&.is-back-btn {
+					background: rgb(129, 130, 133);
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}
+//example responsive css
+@media (min-width: $screen-sm-min) {
+	//mobile lanscape
+}
+@media (min-width: $screen-sm-phone-large) {
+	//mobile lanscape
+	.c-error-page {
+		h1 {
+			margin-bottom: 25px;
+		}
+		.is-content {
+			.is-btn-group {
+				.c-btn {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}
+@media (min-width: $screen-md-min) {
+	//ipad portrait
+	.c-error-page {
+		// margin-bottom: 30px;
+	}
+}
+@media (min-width: $screen-lg-min) {
+	//ipad lanscape & pc 1024x768px
+}
+@media (min-width: $screen-xl-min) {
+	//pc & mac 1280px grow up
+}
+@media (min-width: 1440px) {
+	//pc & mac 1440px grow up
+}
+@media (min-width: 1900px) {
+	//pc & mac 1900px grow up
+}
+//end example responsive css
+/*---------- end example css ----------*/

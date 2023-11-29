@@ -2,9 +2,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 13023",
+    "dev": "next dev -p 1000",
     "build": "next build",
-    "start": "next start -p 13023",
+    "start": "next start -p 1000",
     "type-check": "tsc --pretty --noEmit",
     "format": "prettier --write .",
     "lint": "eslint . --ext ts --ext tsx --ext js",
@@ -24,6 +24,7 @@
     ]
   },
   "dependencies": {
+    "@notionhq/client": "^2.2.13",
     "@popperjs/core": "^2.11.8",
     "aos": "^2.3.4",
     "axios": "^1.6.2",

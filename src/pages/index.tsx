@@ -7,10 +7,16 @@ import withLayout from '@src/lib/withLayout'
 import { withStaticProps } from '@src/helpers/wrapperProps'
 import PageError from '@src/components/common/PageError'
 import { PAGE_ERROR } from '@src/interfaces/enums'
+import * as notionServices from '@src/services/notion.service'
 
-interface IndexProps {}
+interface IndexProps {
+  books: any
+}
 
-const Index: FC<IndexProps> = () => {
+const Index: FC<IndexProps> = (props: IndexProps) => {
+  const { books } = props
+  console.log("🚀 ~ file: index.tsx:18 ~ books:", books)
+
   return (
     <Layout>
       <>
@@ -26,8 +32,11 @@ const Index: FC<IndexProps> = () => {
 }
 
 export const getStaticProps: GetStaticProps = withStaticProps(async function getStaticProps() {
+  const resListBooks = await notionServices.getListBooks()
   return {
-    props: {},
+    props: {
+      books: resListBooks
+    },
   }
 })
 
