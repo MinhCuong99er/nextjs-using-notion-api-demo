@@ -6,11 +6,11 @@ cấu hình trong file .env
 
 # lấy đường dẫn cdn css,images....
 
-BASE_URL=''
+BASE_URL='https://mshop.mediaone.dev'
 
 # Link api
 
-API_URL=''
+API_URL='https://mshop.mediaone.dev/api'
 
 # Link favicon
 
@@ -24,8 +24,8 @@ APP_IMAGE='https://www.amzdiscover.com/blog/wp-content/uploads/2018/10/free-stuf
 # Facebook
 
 hiện tại chưa dùng
-FACEBOOK_APP_ID=""
-FACEBOOK_PAGE_ID=""
+FACEBOOK_APP_ID="1285686478256565"
+FACEBOOK_PAGE_ID="2458078334210593"
 
 ## How to use
 
@@ -38,4 +38,4 @@ yarn start
 ## Note
 
 Thay đổi port ở trong package.json
-"start": "next start -p 19020"
+"start": "next start -p 4000"

@@ -1,96 +1,43 @@
 export enum TRANSACTION_TYPE {
-	ACCUMULATE = 'accumulate',
-	EXCHANGE = 'exchange',
+  ACCUMULATE = 'accumulate',
+  EXCHANGE = 'exchange',
 }
 
 export enum GENDER {
-	MALE = 'male',
-	FEMALE = 'female',
-	OTHER = 'other',
-}
-
-export enum GENDER_TYPE {
-	MALE = 1,
-	FEMALE = 0,
-	OTHER = 2,
+  MALE = 'male',
+  FEMALE = 'female',
+  OTHER = 'other',
 }
 
 export enum CartType {
-	PRODUCT = 'product',
-	VOUCHER = 'voucher',
-}
-
-export enum BANNER_ACTION {
-	VOUCHER_INFO = 'voucherInfo',
-	OPEN_URL = 'openUrl',
-	PRODUCT_INFO = 'productInfo',
-	REDIRECT = 'redirect',
+  PRODUCT = 'product',
+  VOUCHER = 'voucher',
 }
 
 export enum STATE {
-	PENDING = 'pending',
-	PROCESSING = 'processing',
-	DONE = 'done',
-	ERROR = 'error',
+  PENDING = 'pending',
+  PROCESSING = 'processing',
+  DONE = 'done',
+  ERROR = 'error',
 }
 
-export enum HISTORY_EXCHANGE_TYPE {
-	ACCUMULATE = 'accumulate',
-	EXCHANGE = 'exchange',
+export enum ACTION {
+  POINT = 'point',
+  LOAD_MORE = 'loadMore',
+  TYPE = 'type',
+  CATEGORY = 'category',
+  NONE = '',
+  TIME = 'time',
+  SEARCH = 'search',
+  SERVICE = 'service',
 }
 
-export enum NOTIFICATION_TYPE {
-	PERSONAL = '2',
-	ALL = '1',
-}
-
-export enum MY_VOUCHER_USED {
-	USED = 1,
-	NOT_USED = 0,
-}
-
-export enum ORDER_ITEM_STATUS {
-	WAIT_FOR_ADMIN_CONFIRM = 'wait_for_admin_confirm',
-	SHIPPING = 'shipping',
-	COMPLETED = 'completed',
-	CANCELED = 'canceled',
-}
-
-export enum CALLLOG_TYPE {
-	IN = 'in',
-	OUT = 'out',
-}
-
-export enum REVENUE_TYPE {
-	YEAR = 'year',
-	MONTH = 'month',
-	DAY = 'day',
-	HOURS = 'hours',
-}
-
-export enum CATEGORY_TYPE {
-	TRAVEL = 'travel',
-	SHOPPING = 'shopping',
-	ENTERTAINMENT = 'entertainmant',
-	TRANSPORT = 'transport',
-	EDUCATION = 'education',
-	HEALTH = 'health',
-	ELECTRONICS = 'electronics',
-	TECHNOLOGY_EQUIPMENT = 'technology_equipment',
-}
-
-export enum VOUCHER_TYPE {
-	ACCUMULATE = 'accumulate',
-	DISCOUNT = 'discount',
-	BOTH = 'both',
-}
-
-export enum VOUCHER_TYPE_VALUE {
-	CONSTANT = 'constant',
-	PERCENTAGE = 'percentage',
-}
-
-export enum VOUCHER_APPLY {
-	CARDCODE = 'cardcode',
-	ALL = 'all',
+export enum PAGE_ERROR {
+  PAGE_404 = 'Trang bạn tìm không tồn tại!',
+  ONLY_MOBILE = 'Web chỉ hỗ trợ trên nền tảng Mobile!',
+  NONE_PRODUCT_DETAIL = 'Sản phẩm chưa có thông tin!',
+  NONE_VOUCHER_DETAIL = 'Voucher chưa có thông tin!',
+  REQUIRE_LOGIN = 'Bạn không có quyền xem trang này!',
+  NO_PRODUCTS_IN_CART = 'Bạn chưa chọn sản phẩm nào trong giỏ hàng',
+  DEFAULT = 'Đã có lỗi xảy ra, vui lòng thử lại sau',
 }

@@ -1,62 +1,73 @@
 import { ReactElement, JSXElementConstructor, ReactFragment } from 'react'
-import Document, { Html, Head, Main, NextScript, DocumentContext } from 'next/document'
+import Document, {
+  Html,
+  Head,
+  Main,
+  NextScript,
+  DocumentContext,
+} from 'next/document'
 import { Helmet, HelmetData } from 'react-helmet'
 // import getConfig from 'next/config'
-import { GA_TRACKING_ID } from '../lib/gtag'
+// import { GA_TRACKING_ID } from '../lib/gtag'
 
 interface MyDocumentProps {
-	helmet: HelmetData
+  helmet: HelmetData
 }
 
 // const { publicRuntimeConfig } = getConfig()
 export default class MyDocument extends Document<MyDocumentProps> {
-	static async getInitialProps(ctx: DocumentContext): Promise<{
-		asPath: any
-		pathname: any
-		query: any
-		helmet: HelmetData
-		html: string
-		head?: JSX.Element[]
-		styles?: ReactElement<any, string | JSXElementConstructor<any>>[] | ReactFragment
-	}> {
-		const { ...args } = ctx
-		const documentProps = await super.getInitialProps(ctx)
-		const { asPath, pathname, query } = args
-		return {
-			...documentProps,
-			asPath,
-			pathname,
-			query,
-			helmet: Helmet.renderStatic(),
-		}
-	}
+  static async getInitialProps(ctx: DocumentContext): Promise<{
+    asPath: any
+    pathname: any
+    query: any
+    helmet: HelmetData
+    html: string
+    head?: JSX.Element[]
+    styles?:
+      | ReactElement<any, string | JSXElementConstructor<any>>[]
+      | ReactFragment
+  }> {
+    const { ...args } = ctx
+    const documentProps = await super.getInitialProps(ctx)
+    const { asPath, pathname, query } = args
+    return {
+      ...documentProps,
+      asPath,
+      pathname,
+      query,
+      helmet: Helmet.renderStatic(),
+    }
+  }
 
-	// should render on <html>
-	get helmetHtmlAttrComponents(): any {
-		return this.props.helmet.htmlAttributes.toComponent()
-	}
+  // should render on <html>
+  get helmetHtmlAttrComponents(): any {
+    return this.props.helmet.htmlAttributes.toComponent()
+  }
 
-	// should render on <body>
-	get helmetBodyAttrComponents(): any {
-		return this.props.helmet.bodyAttributes.toComponent()
-	}
+  // should render on <body>
+  get helmetBodyAttrComponents(): any {
+    return this.props.helmet.bodyAttributes.toComponent()
+  }
 
-	// should render on <head>
-	get helmetHeadComponents(): any {
-		return Object.keys(this.props.helmet)
-			.filter((el) => el !== 'htmlAttributes' && el !== 'bodyAttributes')
-			.map((el) => this.props.helmet[el].toComponent())
-	}
+  // should render on <head>
+  get helmetHeadComponents(): any {
+    return Object.keys(this.props.helmet)
+      .filter((el) => el !== 'htmlAttributes' && el !== 'bodyAttributes')
+      .map((el) => this.props.helmet[el].toComponent())
+  }
 
-	render(): JSX.Element {
-		return (
-			<Html {...this.helmetHtmlAttrComponents}>
-				<Head>
-					{/* Global Site Tag (gtag.js) - Google Analytics */}
-					<script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`} />
-					<script
-						dangerouslySetInnerHTML={{
-							__html: `
+  render(): JSX.Element {
+    return (
+      <Html {...this.helmetHtmlAttrComponents}>
+        <Head>
+          {/* Global Site Tag (gtag.js) - Google Analytics */}
+          {/* <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
@@ -65,10 +76,10 @@ export default class MyDocument extends Document<MyDocumentProps> {
                   page_path: window.location.pathname,
                 });
               `,
-						}}
-					/>
+            }}
+          /> */}
 
-					{/* <link
+          {/* <link
             rel="stylesheet"
             id="contact-form-7-css"
             href="/static/lib/contact-form-7/includes/css/styles.css"
@@ -76,12 +87,12 @@ export default class MyDocument extends Document<MyDocumentProps> {
             media="all"
           /> */}
 
-					{this.helmetHeadComponents}
-				</Head>
-				<body {...this.helmetBodyAttrComponents}>
-					{/* <div id="fb-root" /> */}
-					{/* <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCwsJNSsbDwyEtvNlRHTDOgyjpxlZZji30" type="text/javascript"></script> */}
-					{/* <script
+          {this.helmetHeadComponents}
+        </Head>
+        <body {...this.helmetBodyAttrComponents}>
+          {/* <div id="fb-root" /> */}
+          {/* <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCwsJNSsbDwyEtvNlRHTDOgyjpxlZZji30" type="text/javascript"></script> */}
+          {/* <script
             dangerouslySetInnerHTML={{
               __html: `
                 window.fbAsyncInit = function() {
@@ -104,7 +115,7 @@ export default class MyDocument extends Document<MyDocumentProps> {
               `,
             }}
           /> */}
-					{/* <script dangerouslySetInnerHTML={{
+          {/* <script dangerouslySetInnerHTML={{
             __html: `
               (function (d, s, id) {
                 var js, fjs = d.getElementsByTagName(s)[0];
@@ -117,18 +128,10 @@ export default class MyDocument extends Document<MyDocumentProps> {
           }}
           />
           <div className="fb-customerchat" minimized="false" logged_in_greeting="Xin chào! Chúng tôi có thể giúp gì cho bạn?" logged_out_greeting="Xin chào! Chúng tôi có thể giúp gì cho bạn?" page_id={`${publicRuntimeConfig.FACEBOOK_PAGE_ID}`} theme_color="#ff6b1e"> </div> */}
-					<div className="videos">
-						<audio id="remoteAudio" style={{ position: 'absolute', top: '-200px' }} controls></audio>
-						{/* <audio
-              id="remoteAudio2"
-              style="position: absolute; top: -200px"
-              controls
-            ></audio> */}
-					</div>
-					<Main />
-					<NextScript />
-				</body>
-			</Html>
-		)
-	}
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
+    )
+  }
 }

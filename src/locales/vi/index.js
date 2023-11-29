@@ -3,9 +3,9 @@ import header from './header.json'
 import footer from './footer.json'
 
 const vi = {
-	...common,
-	...header,
-	...footer,
+  ...common,
+  ...header,
+  ...footer,
 }
 
 export default vi

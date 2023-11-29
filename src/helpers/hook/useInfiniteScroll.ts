@@ -1,33 +1,33 @@
 import { useRef, useCallback } from 'react'
 
 const useInfiniteScroll = (callback, isFetching) => {
-	//use useRef to store a DOM node and the returned object will persist regardless of re-renders
-	const observer = useRef<any>()
+  //use useRef to store a DOM node and the returned object will persist regardless of re-renders
+  const observer = useRef<any>()
 
-	//useCallback takes a callback argument and an array dependency list and returns a memoized callback
-	//which is guaranteed to have the same reference
-	const lastElementRef = useCallback(
-		(node) => {
-			if (isFetching) return
+  //useCallback takes a callback argument and an array dependency list and returns a memoized callback
+  //which is guaranteed to have the same reference
+  const lastElementRef = useCallback(
+    (node) => {
+      if (isFetching) return
 
-			//stop watching targets, think of it as a reset
-			if (observer.current) observer.current.disconnect()
+      //stop watching targets, think of it as a reset
+      if (observer.current) observer.current.disconnect()
 
-			//create a new intersection observer and execute the callback incase of an intersecting event
-			observer.current = new IntersectionObserver((entries) => {
-				if (entries[0].isIntersecting) {
-					callback()
-				}
-			})
+      //create a new intersection observer and execute the callback incase of an intersecting event
+      observer.current = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) {
+          callback()
+        }
+      })
 
-			//if there is a node, let the intersection observer watch that node
-			if (node) observer.current.observe(node)
-		},
-		[callback, isFetching]
-	)
+      //if there is a node, let the intersection observer watch that node
+      if (node) observer.current.observe(node)
+    },
+    [callback, isFetching]
+  )
 
-	//return reference to the last element
-	return [lastElementRef]
+  //return reference to the last element
+  return [lastElementRef]
 }
 
 /* import { useState, useEffect, useCallback } from 'react'

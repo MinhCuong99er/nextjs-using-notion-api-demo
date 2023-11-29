@@ -4,10 +4,10 @@ import ko from './ko'
 import ja from './ja'
 
 const i18n = {
-	en,
-	vi,
-	ko,
-	ja,
+  en,
+  vi,
+  ko,
+  ja,
 }
 
 export default i18n

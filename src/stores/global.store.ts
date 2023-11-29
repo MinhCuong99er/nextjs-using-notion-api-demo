@@ -1,6 +1,5 @@
 import { action, observable, makeObservable } from 'mobx'
 import RootStore from './RootStore'
-// import * as globalServices from '@src/services/global.service'
 import { STATE } from '@src/interfaces/enums'
 
 export type GlobalHydration = {

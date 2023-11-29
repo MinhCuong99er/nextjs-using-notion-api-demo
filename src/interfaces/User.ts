@@ -1,35 +1,40 @@
-export interface IUserResponse {
-	code: number
-	message?: number
-	data?: {
-		userInfo: User
-		token: string
-		tokenChat: string
-		chatId: string
-		storeInfo: StoreInfo
-		role: string
-	}
-}
+import { GENDER } from './enums'
 
-export interface StoreInfo {
-	name: string
-	address: string
-	province: string
-	district: string
-	ward: string
-	phone: string
+export interface IUserResponse {
+  code: number
+  message: number
+  data: {
+    userInfo: User
+    token?: string
+  }
 }
 
 export interface User {
-	total: number
-	balance: number
-	id: string
-	refId: string
-	customerId: string
-	phone: string
-	points_by_type?: any
-	storeOwnerName: string
-	storeOwnerPhone: string
-	point?: number
-	percent?: number
+  createdAt: number
+  updatedAt: number
+  id: number
+  name: string
+  phone: string
+  facebookId: string
+  googleId: string
+  email: string
+  birth: number
+  gender: GENDER
+  address: string
+  avatar: string
+  provinceId: number
+  districtId: number
+  wardId: number
+  contact: string
+  exchangeId: string
+  tierId: number
+  inviteCode: string
+  secure: string
+  merchantId: string
+  merchantRef: string
+  mpoint: number
+  totalMpoint: number
+  codeCount: number
+  countNotiUnRead: number
+  isBlock: boolean
 }

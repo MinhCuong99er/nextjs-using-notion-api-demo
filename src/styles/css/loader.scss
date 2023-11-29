@@ -1,25 +1,27 @@
 .loader {
-	position: relative;
-	margin: 0 auto;
-	width: 60px;
-	height: 100vh;
+  position: relative;
+  margin: 0 auto;
+  width: 60px;
+  height: 100vh;
 
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: -ms-flex;
-	display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
 
-	-webkit-flex-direction: column;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	-webkit-flex-wrap: nowrap;
-	-ms-flex-wrap: nowrap;
-	flex-wrap: nowrap;
-	-webkit-justify-content: center;
-	-ms-justify-content: center;
-	justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+
+  align-items: center;
 }
 
 .loading {
-	width: 120px;
+  width: 120px;
 }
